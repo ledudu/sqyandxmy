@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
+
 	function ChineseHomework_1()
 	{
     	alert("用感情地诵读或“咏唱”：《野望》《黄鹤楼》《使至塞上》《渡荆门送别》 《钱塘湖春行》《庭中有奇树》《龟虽寿》《赠从第》《梁甫行》 《饮酒》；《春望》《雁门太守行》《赤壁》《渔家傲》《浣溪沙》《采桑子》《相见欢》《如梦令》。这几首古诗歌可以查阅中央电视台文化节目《经典咏流传》节目看看是否被谱曲而唱，并尝试模仿学习“咏唱”, 可以尝试录制音频或视频，晓黑板打卡，进行展示。");
@@ -143,7 +144,7 @@ function calculateData(mode)
 }
 function loadData(str)
 {
-    sourceArray = str.split(";")
+    sourceArray = str.split("|")
     for(var i = 0; i<=document.getElementsByTagName("input").length - 1; i++)
     {
         if(sourceArray[i] === "true")
@@ -162,7 +163,7 @@ function saveData(saveArray)
     for (var i = 0; i <= saveArray.length - 1; i++) {
         if(i != saveArray.length - 1)
         {
-            data += saveArray[i] + ";";
+            data += saveArray[i] + "|";
         }
         else
         {
@@ -202,10 +203,6 @@ function main()
 }
 
 main();
-
-//  setInterval(function(){console.log(updatedArray)},1000);
-//  setInterval(function(){console.log(data)},1000);
-
 </script>
 <style id="2020暑假作业完成情况_1536_Styles">
 input[type="checkbox"] 
